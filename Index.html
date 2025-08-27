@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoachFD — Firefighter Coaching & PAR</title>
+  <meta name="description" content="CoachFD: real-world firefighter coaching plus PAR, your application organizer." />
+  <style>
+    :root { --bg:#0b0f14; --fg:#e7edf3; --muted:#a7b1bb; --accent:#e63946; --card:#141a22; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:var(--bg);color:var(--fg);line-height:1.5}
+    .wrap{max-width:1040px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0}
+    .brand{font-weight:700;letter-spacing:.3px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a:hover{color:var(--fg)}
+    .hero{padding:56px 0}
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 20px;max-width:60ch}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;background:var(--accent);color:white;font-weight:600}
+    .btn.secondary{background:#1f2834}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:32px 0}
+    .card{background:var(--card);border:1px solid #1f2834;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px}
+    footer{color:var(--muted);padding:40px 0}
+    .note{font-size:.9rem;color:var(--muted)}
+    code{background:#10151c;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">CoachFD</div>
+      <nav>
+        <a href="/services.html">Services</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="mailto:hello@coachfd.ca">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Real-world firefighter coaching + PAR</h1>
+      <p>CoachFD helps candidates get interview-ready and organized. PAR (Personnel Accountability Report) keeps your applications, deadlines, and certifications on track.</p>
+      <div class="cta-row">
+        <a class="btn" href="/services.html">Book Coaching</a>
+        <a class="btn secondary" href="https://par.coachfd.ca">Launch PAR</a>
+      </div>
+      <p class="note" style="margin-top:10px;">Tip: you can update that PAR link later—this is just a placeholder.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Interview Coaching</h3>
+        <p>Practical, scenario-based prep using the STAR method and real fire-service context.</p>
+      </div>
+      <div class="card">
+        <h3>Resume & Cover Letter</h3>
+        <p>Role-aligned resumes tailored to municipal hiring competencies.</p>
+      </div>
+      <div class="card">
+        <h3>PAR App</h3>
+        <p>Centralize applications, track expiries, store docs. Web app launch from CoachFD.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> CoachFD. All rights reserved.</div>
+      <div class="note">This site is hosted on GitHub Pages.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <noscript>This site works best with JavaScript enabled.</noscript>
+</body>
+</html>

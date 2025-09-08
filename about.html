@@ -8,11 +8,6 @@
 <body>
   <header>
     <div class="wrap row" style="position:relative;">
-      <div id="menu-toggle" style="cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;width:40px;height:40px;margin-right:12px;">
-        <span style="display:block;width:24px;height:3px;background:#fff;border-radius:2px;margin:3px 0;"></span>
-        <span style="display:block;width:24px;height:3px;background:#fff;border-radius:2px;margin:3px 0;"></span>
-        <span style="display:block;width:24px;height:3px;background:#fff;border-radius:2px;margin:3px 0;"></span>
-      </div>
       <div class="brand">
         <img class="logo" src="/assets/img/logo.png" alt="CoachFD" onerror="this.style.display='none'"> CoachFD
       </div>
@@ -22,45 +17,10 @@
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
       </nav>
-      <div id="dropdown-menu" style="display:none;position:absolute;top:56px;left:0;background:#1f2834;border-radius:0 0 12px 12px;box-shadow:0 4px 16px #0002;padding:16px 0;z-index:1000;min-width:180px;">
-        <a href="/about.html" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">About</a>
-        <div style="position:relative;">
-          <a href="/services.html" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Services &#9656;</a>
-          <div class="submenu" style="display:none;position:absolute;left:100%;top:0;background:#222;border-radius:0 8px 8px 0;box-shadow:0 4px 16px #0002;min-width:200px;">
-            <a href="/services.html#career-mapping" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Career Planning</a>
-            <a href="/services.html#resumes" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Cover Letter and Resumes</a>
-            <a href="/services.html#interview-coaching" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Interview Coaching</a>
-          </div>
-        </div>
-        <a href="/shop.html" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Shop</a>
-        <a href="/contact.html" style="display:block;padding:10px 24px;color:#fff;text-decoration:none;">Contact</a>
-      </div>
     </div>
     <style>
       #dropdown-menu .submenu { z-index: 2000; }
     </style>
-    <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const dropdownMenu = document.getElementById('dropdown-menu');
-      menuToggle.addEventListener('click', function(e) {
-        e.stopPropagation();
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-      });
-      document.addEventListener('click', function(e) {
-        if (dropdownMenu.style.display === 'block') dropdownMenu.style.display = 'none';
-      });
-      // Hamburger submenu hover
-      const servicesDiv = dropdownMenu.querySelector('div');
-      const submenu = dropdownMenu.querySelector('.submenu');
-      if (servicesDiv && submenu) {
-        servicesDiv.addEventListener('mouseenter', function() {
-          submenu.style.display = 'block';
-        });
-        servicesDiv.addEventListener('mouseleave', function() {
-          submenu.style.display = 'none';
-        });
-      }
-    </script>
   </header>
   <main class="wrap">
     <h1>About CoachFD</h1>

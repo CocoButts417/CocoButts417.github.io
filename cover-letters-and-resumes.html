@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letters and Resumes — CoachFD</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap row" style="position:relative;">
+      <div class="brand">
+        <img class="logo" src="/assets/img/logo.png" alt="CoachFD" onerror="this.style.display='none'"> CoachFD
+      </div>
+      <nav class="main-nav">
+        <a href="/services.html" class="has-submenu">Services</a>
+        <div class="submenu">
+          <a href="/career-planning.html">Career Planning</a>
+          <a href="/cover-letters-and-resumes.html">Cover Letter and Resumes</a>
+          <a href="/interview-coaching.html">Interview Coaching</a>
+        </div>
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+    <style>
+      .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+      }
+      .main-nav .has-submenu {
+        position: relative;
+      }
+      .main-nav .submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #1f2834;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 4px 16px #0002;
+        min-width: 220px;
+        z-index: 2000;
+        flex-direction: column;
+      }
+      .main-nav .has-submenu:focus + .submenu,
+      .main-nav .has-submenu:hover + .submenu,
+      .main-nav .submenu:hover,
+      .main-nav .submenu:focus-within {
+        display: flex;
+      }
+      .main-nav .submenu a {
+        display: block;
+        padding: 10px 24px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .main-nav .submenu a:hover {
+        background: #333;
+      }
+      @media (max-width: 900px) {
+        .main-nav {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          padding: 16px 0;
+        }
+        .main-nav a, .main-nav .has-submenu {
+          width: 100%;
+          padding: 12px 24px;
+        }
+        .main-nav .submenu {
+          position: static;
+          box-shadow: none;
+          border-radius: 0;
+          min-width: 0;
+        }
+        .main-nav .submenu a {
+          padding-left: 40px;
+        }
+      }
+    </style>
+
+  </header>
+  <main class="wrap">
+    <section class="hero">
+  <h1>Cover Letters and Resumes</h1>
+      <p><!-- Add your cover letter and resumes content here --></p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">© <span id="y"></span> CoachFD. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

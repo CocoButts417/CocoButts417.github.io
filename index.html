@@ -9,15 +9,13 @@
 </head>
 <body>
   <header>
-    <div class="wrap row" style="position:relative;">
-      <div class="brand">
-        <img class="logo" src="/assets/img/logo.png" alt="CoachFD" onerror="this.style.display='none'"> CoachFD
-      </div>
-      <nav>
-        <a href="/services.html">Services</a>
-        <a href="/shop.html">Shop</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+    <div class="topbar container">
+      <a class="brand" href="/">CoachFD</a>
+      <nav class="topbar-nav" aria-label="Primary">
+  <a href="/" data-page="home">Home</a>
+  <a href="/about.html" data-page="about">About Us</a>
+  <a href="/services.html" data-page="services">Services</a>
+  <a class="cta" href="/contact.html" data-page="contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -41,18 +39,22 @@
     </section>
 
     <section class="grid">
-      <div class="card">
-  <h3>Career Mapping</h3>
-  <p>Just starting? CoachFD can help you develop a plan to set you on your way to becoming a member of the Fire Service.</p>
-      </div>
-      <div class="card">
-  <h3>Resumes and Cover Letters</h3>
-  <p>Department-specific and ATS-ready, designed to give you an edge and open the door to interviews.</p>
-      </div>
-      <div class="card">
-  <h3>Interview Coaching</h3>
-  <p>Practical coaching that demystifies Fire Fighter interviews and prepares you to answer with clarity, confidence, and strategy.</p>
-      </div>
+      <a class="card" href="/career-planning.html" style="text-decoration:none;cursor:pointer;">
+  <h3>Career Planning</h3>
+        <p>CoachFD helps you map your next steps toward the fire service, giving you a clear picture of what to do and how to move forward.</p>
+      </a>
+      <a class="card" href="/cover-letters-and-resumes.html" style="text-decoration:none;cursor:pointer;">
+        <h3>Resumes and Cover Letters</h3>
+        <p>Bespoke resumes and cover letters — department-specific, ATS-ready, and built to give you an edge in the application stage.</p>
+      </a>
+      <a class="card" href="/interview-coaching.html" style="text-decoration:none;cursor:pointer;">
+        <h3>Interview Coaching</h3>
+        <p>Practical coaching that demystifies Fire Fighter interviews and prepares you to answer with clarity, confidence, and strategy.</p>
+      </a>
+      <a class="card" href="/mock-interviews.html" style="text-decoration:none;cursor:pointer;">
+        <h3>Mock Interviews</h3>
+        <p>Ready to put your skills to the test? Practice under real interview conditions and walk away with clear, targeted feedback to sharpen your performance.</p>
+      </a>
     </section>
   </main>
 

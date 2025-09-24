@@ -7,6 +7,11 @@
   <title>Services — CoachFD</title>
   <meta name="description" content="CoachFD: real-world Fire Fighter coaching plus PAR, your application organizer." />
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .card { transition: box-shadow 0.2s; display: flex; flex-direction: column; min-height: 180px; }
+    .card .card-desc { display: block; margin-top: 8px; }
+    .card .card-cost { margin-top: 8px; }
+  </style>
 </head>
 <body>
   <header>
@@ -31,45 +36,108 @@
     </section>
   <section style="margin-top:2em;">
       <h2>Career Planning</h2>
-      <div style="margin-bottom:1em;">
-        <strong>Career Planning Virtual Session – 60 Minutes</strong><br>
-        Personalized session to map out your Fire Service career path: timelines, goals, next steps.<br>
-        <span style="font-weight:600;">Cost: $120CAD</span>
+      <div class="grid">
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Career Planning</span>
+          <h3>Virtual Session – 60 Minutes</h3>
+          <div class="card-desc">Personalized session to map out your Fire Service career path: timelines, goals, next steps.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAyoJLO8eXwVjCaxWFrVv6Y"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
       </div>
-  <h2>Cover Letters and Resumes</h2>
-      <div style="margin-bottom:1em;">
-        <strong>Cover Letter Review & Rewrite (Department Specific)</strong><br>
-        Tailored cover letter rewritten for the specific Fire Department you’re applying to.<br>
-        <span style="font-weight:600;">Cost: $80CAD</span>
-      </div>
-      <div style="margin-bottom:1em;">
-        <strong>Resume Review & Rewrite (Department Specific)</strong><br>
-        Resume optimized to match Fire Department expectations — ATS-friendly and department-targeted.<br>
-        <span style="font-weight:600;">Cost: $100CAD</span>
-      </div>
-      <div style="margin-bottom:1em;">
-        <strong>Cover Letter + Resume Review & Rewrite (Department Specific)</strong><br>
-        Both cover letter + resume rewritten to present a cohesive, strong application for one Fire Department.<br>
-        <span style="font-weight:600;">Cost: $160CAD</span>
+      <h2>Cover Letters and Resumes</h2>
+      <div class="grid">
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Cover Letter</span>
+          <h3>Review & Rewrite (Department Specific)</h3>
+          <div class="card-desc">Tailored cover letter rewritten for the specific Fire Department you’re applying to.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAz1sLO8eXwVjCajmMC031f"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Resume</span>
+          <h3>Review & Rewrite (Department Specific)</h3>
+          <div class="card-desc">Resume optimized to match Fire Department expectations — ATS-friendly and department-targeted.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAzXwLO8eXwVjCajCYHPimG"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Cover Letter + Resume</span>
+          <h3>Review & Rewrite (Department Specific)</h3>
+          <div class="card-desc">Both cover letter + resume rewritten to present a cohesive, strong application for one Fire Department.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAzsGLO8eXwVjCatA3fzWNp"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
       </div>
       <h2>Interview Preparation</h2>
-      <div style="margin-bottom:1em;">
-        <strong>Interview Coaching Virtual Session – 60 Minutes</strong><br>
-        One-on-one session covering STAR method, competency-based storytelling, and answer prep.<br>
-        <span style="font-weight:600;">Cost: $140CAD</span>
-      </div>
-      <div style="margin-bottom:1em;">
-        <strong>Mock Interview Virtual Session – 60 Minutes</strong><br>
-        Simulated interview with Fire Service questions and full feedback.<br>
-        <span style="font-weight:600;">Cost: $160CAD</span>
-      </div>
-      <div style="margin-bottom:1em;">
-        <strong>Interview Bundle (Coaching + Mock Panel – Two 60-Minute Sessions)</strong><br>
-        First session builds strategy and STAR stories; second session simulates a full panel interview with feedback.<br>
-        <span style="font-weight:600;">Cost: $280CAD</span>
+      <div class="grid">
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Interview Coaching</span>
+          <h3>Virtual Session – 60 Minutes</h3>
+          <div class="card-desc">One-on-one session covering STAR method, competency-based storytelling, and answer prep.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAzvFLO8eXwVjCagxn0afoJ"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Mock Interview</span>
+          <h3>Virtual Session – 60 Minutes</h3>
+          <div class="card-desc">Simulated interview with Fire Service questions and full feedback.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAzvyLO8eXwVjCaBdLT6wt2"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+          <span class="card-header">Interview Bundle</span>
+          <h3>Coaching + Mock Panel – Two 60-Minute Sessions</h3>
+          <div class="card-desc">First session builds strategy and STAR stories; second session simulates a full panel interview with feedback.</div>
+          <div style="margin-top:12px;">
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SAzz4LO8eXwVjCaumw3yGp8"
+              publishable-key="pk_live_51SAaR5LO8eXwVjCap1ax4M6LjoX3opqZ8nbzMAWJVGTxU7VyO222fQuhL9PRAhftJkaVgN1RbPIg1SHv2NFTZti600TKxfn5Af"
+            >
+            </stripe-buy-button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
 
   <footer>
     <div class="wrap">© <span id="y"></span> CoachFD. All rights reserved.</div>

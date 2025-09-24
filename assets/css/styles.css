@@ -14,7 +14,7 @@ nav a{color:var(--muted);text-decoration:none;margin-left:16px}
 nav a:hover{color:var(--fg)}
 .hero{padding:56px 0}
 .hero h1{font-size:clamp(28px,5vw,44px);margin:.2rem 0 .5rem}
-.hero p{color:var(--muted);margin:0 0 20px;max-width:60ch}
+ .hero p{color:var(--muted);margin:0 0 8px;max-width:60ch}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;background:var(--accent);color:white;font-weight:700}
 .btn.secondary{background:#1f2834}
@@ -30,6 +30,14 @@ nav a:hover{color:var(--fg)}
   }
 }
 .card{background:var(--card);border:1px solid #1f2834;border-radius:16px;padding:18px}
+.card,
+.card:link,
+.card:visited,
+.card:hover,
+.card:active {
+  text-decoration: none;
+  color: inherit;
+}
 .card h3 {
   margin: 0 0 8px;
   font-size: 1.15rem;

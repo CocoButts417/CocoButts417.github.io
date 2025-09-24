@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoachFD Hot Takes</title>
+  <meta name="description" content="CoachFD Hot Takes: Journal entries and articles on fire service topics, hiring, and career advice." />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <a class="brand" href="/">
+        <img src="/assets/img/stock/CoachFDsmall.png" alt="CoachFD" style="height:48px;width:auto;max-height:56px;vertical-align:middle;" />
+      </a>
+      <nav class="topbar-nav" aria-label="Primary">
+  <a href="/" data-page="home">Home</a>
+  <a href="/about.html" data-page="about">About Us</a>
+  <a href="/services.html" data-page="services">Services</a>
+  <a href="/hottakes.html" data-page="hottakes">CoachFD Hot Takes</a>
+  <a class="cta" href="/contact.html" data-page="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+  <h1>CoachFD Hot Takes</h1>
+  <p>Welcome to the CoachFD Hot Takes page. I created this part of my site so I can post my thoughts, articles, or quick tips, and maybe some Fire-Related Hot Takes. This page will be unimpeded by the constraints of the rest of the website, so you can expect blunt and sometimes spicy content, as my goal is to be as no nonsense as possible.</p>
+  <p>Here, just as in real life, you'll get my authentic self, where I can post material that I believe will be beneficial for any Fire Service candidates, and also dole out some food for thought on getting hired, straight from the guy who's been there, and done that.</p>
+    </section>
+    <section id="blog-entries">
+      <div class="grid" id="post-grid">
+        <a class="card" href="#" onclick="openPost('post1');return false;">
+          <div class="card-header-row" style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+            <span class="card-header">Hot Take #1</span>
+            <span class="card-date" style="font-size:0.95em;color:#888;">Sep 24, 2025</span>
+          </div>
+          <h3>Pleased to Meet You</h3>
+        </a>
+        <a class="card" href="#">
+          <span class="card-header"></span>
+          <h3></h3>
+        </a>
+        <a class="card" href="#">
+          <span class="card-header"></span>
+          <h3></h3>
+        </a>
+        <a class="card" href="#">
+          <span class="card-header"></span>
+          <h3></h3>
+        </a>
+      </div>
+      <!-- Modal for post content -->
+      <div id="post-modal" style="display:none;position:fixed;z-index:1000;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
+        <div style="background:#fff;color:#111;max-width:600px;width:90vw;padding:32px 24px;border-radius:18px;box-shadow:0 8px 32px #0003;position:relative;max-height:80vh;overflow-y:auto;">
+          <button onclick="closePost()" style="position:absolute;top:12px;right:16px;font-size:1.5rem;background:none;border:none;cursor:pointer;">&times;</button>
+          <div id="post-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">© <span id="y"></span> CoachFD. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+<script>
+// Post content
+const posts = {
+  post1: {
+    title: 'Pleased to Meet You',
+    content: `
+      <p>Hello there, and welcome to my first post on Hot Takes. I wanted to use my first post to be something of an informal introduction to Hot Takes, and CoachFD as a whole. This is a completely new experience for me, from top to bottom, but I’m so excited to be getting this project of mine off the ground. </p>
+      <p>The idea behind CoachFD Hot Takes is so I can have an area that isn’t as polished, like I try to achieve with the rest of the website. I can be professional when required, but that’s not who I am in real life – which is probably why the Fire Service is the place I have gravitated to, and have found a place in. With that in mind, I figured this spot would be a perfect place for me to spread my wings a little. In this area, you’ll find a variety of topics discussed, all relating to the hiring process in the Fire Service. There will be straight forward op-ed types of posts, discussing a variety of topics, or quick posts, discussing one focused issue. You’re not going to get sugar-coated or sanitized takes from me. No one has the time to read fluff, and I don’t intend to offer any.</p>
+      <p>Having been part of the candidate pool for a long time, I had the fortune, and misfortune of seeing a few different ways to skin a cat, as far as getting on. I want to do my best to lean into and show what worked to get hired - not just for the Fire Service, but in several other jobs I have applied to over the years. There are plenty of commonalities between any regular job interview, and a Fire Fighter interview, and also some stark differences. Here, I can explore those things, and maybe rant about the pitfalls of the application phase, and some steamy hot takes I’ve come across in my time. So stick around, take what helps, laugh at the rest, and be thankful you aren’t reading an HR-approved guide!<br>-Matt</p>
+    `
+  },
+  post2: {
+    title: '',
+    content: ''
+  },
+  post3: {
+    title: '',
+    content: ''
+  },
+  post4: {
+    title: '',
+    content: ''
+  }
+};
+function openPost(key) {
+  const post = posts[key];
+  if (!post) return;
+  document.getElementById('post-content').innerHTML = `<h2>${post.title}</h2>` + post.content;
+  document.getElementById('post-modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closePost() {
+  document.getElementById('post-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+</script>
+</body>
+</html>

@@ -8,87 +8,23 @@
 </head>
 <body>
   <header>
-    <div class="wrap row" style="position:relative;">
-      <div class="brand">
-        <img class="logo" src="/assets/img/logo.png" alt="CoachFD" onerror="this.style.display='none'"> CoachFD
-      </div>
-      <nav class="main-nav">
-        <a href="/services.html" class="has-submenu">Services</a>
-        <div class="submenu">
-          <a href="/career-planning.html">Career Planning</a>
-          <a href="/cover-letters-and-resumes.html">Cover Letter and Resumes</a>
-          <a href="/interview-coaching.html">Interview Coaching</a>
-        </div>
-        <a href="/shop.html">Shop</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+    <div class="topbar container">
+      <a class="brand" href="/">
+  <img src="/assets/img/stock/CoachFDsmall.png" alt="CoachFD" style="height:48px;width:auto;max-height:56px;vertical-align:middle;" />
+      </a>
+      <nav class="topbar-nav" aria-label="Primary">
+  <a href="/" data-page="home">Home</a>
+  <a href="/about.html" data-page="about">About Us</a>
+  <a href="/services.html" data-page="services">Services</a>
+  <a href="/hottakes.html" data-page="hottakes">CoachFD Hot Takes</a>
+  <a class="cta" href="/contact.html" data-page="contact">Contact</a>
       </nav>
     </div>
-    <style>
-      .main-nav {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        position: relative;
-      }
-      .main-nav .has-submenu {
-        position: relative;
-      }
-      .main-nav .submenu {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        background: #1f2834;
-        border-radius: 0 0 12px 12px;
-        box-shadow: 0 4px 16px #0002;
-        min-width: 220px;
-        z-index: 2000;
-        flex-direction: column;
-      }
-      .main-nav .has-submenu:focus + .submenu,
-      .main-nav .has-submenu:hover + .submenu,
-      .main-nav .submenu:hover,
-      .main-nav .submenu:focus-within {
-        display: flex;
-      }
-      .main-nav .submenu a {
-        display: block;
-        padding: 10px 24px;
-        color: #fff;
-        text-decoration: none;
-      }
-      .main-nav .submenu a:hover {
-        background: #333;
-      }
-      @media (max-width: 900px) {
-        .main-nav {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0;
-          padding: 16px 0;
-        }
-        .main-nav a, .main-nav .has-submenu {
-          width: 100%;
-          padding: 12px 24px;
-        }
-        .main-nav .submenu {
-          position: static;
-          box-shadow: none;
-          border-radius: 0;
-          min-width: 0;
-        }
-        .main-nav .submenu a {
-          padding-left: 40px;
-        }
-      }
-    </style>
-
   </header>
   <main class="wrap">
     <section class="hero">
   <h1>Cover Letters and Resumes</h1>
-      <p><!-- Add your cover letter and resumes content here --></p>
+    <p>Getting your resume and cover letter in front of a Department Hiring Manager isn’t a given — for most fire service applications, ATS (Applicant Tracking System) software is the first gatekeeper. ATS is used by many departments to automatically scan and sort applications based on keywords, formatting, and qualifications. If your documents aren’t properly formatted, keyword-optimized, and easy to parse, they may never make it past the system. At CoachFD, we make sure your application package is ATS-friendly, professional, and compelling, giving you the best possible chance of being among the top submissions that actually get read by the Department Hiring Managers.</p>
     </section>
   </main>
   <footer>
